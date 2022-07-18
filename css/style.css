@@ -1,0 +1,180 @@
+@charset "UTF-8";
+html {
+    scroll-behavior: smooth;
+}
+html a {
+    text-decoration: none;
+    color: #333;
+}
+
+body {
+    margin: 0;
+    color: #333;
+}
+
+.wrapper {
+    margin: 0 auto;
+    padding: 10px 30px;
+    max-width: 900px;
+}
+
+/* header */
+.wrapper.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-wrapper > h1 {
+    margin: 0;
+}
+.logo > a {
+    display: block;
+}
+.logo img{
+    display: block;
+    width: 120px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    font-size: 14px;
+}
+.nav-item {
+    margin-left: 30px;
+}
+.nav-item > a:hover {
+    color: #999;
+}
+
+/* hero */
+.hero-bg {
+    margin-bottom: 80px;
+}
+.hero-bg > img {
+     width: 100%;
+     max-width: 1920px;
+     height: 600px;
+     object-fit: cover;
+}
+
+/* section */
+.section {
+    margin-bottom: 80px;
+}
+.section-headline {
+    margin: 0 auto;
+    width: fit-content;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    padding-bottom: 3px;
+    border-bottom: #333 solid 1px;
+    margin-bottom: 60px;
+}
+
+/* about */
+.section-about-content {
+    display: flex;
+    justify-content: center;
+}
+
+.about-img {
+    height: 100px;
+    width: 100px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+.text > h3 {
+    text-transform: uppercase;
+    font-size: 15px;
+    margin: 5px 0;
+}
+.text > p {
+    font-size: 15px;
+    margin: 0;
+}
+
+
+/* bicycle */
+.bicycle-list{
+    display: flex;
+    justify-content: space-between;
+}
+.bicycle-item {
+    list-style-type: none;
+    width: 32%;
+    
+}
+.bicycle-img {
+    max-width: 100%;
+}
+.bicycle-title, 
+.bicycle-text {
+    text-align: center;
+}
+.bicycle-title {
+    font-size: 17px;
+    margin: 10px 0;
+}
+.bicycle-text {
+    font-size: 15px;
+}
+
+/* top button */
+.top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    display: none;
+}
+.top-button > span {
+    position: absolute;
+    bottom: 25px;
+    left: 20%;
+    width: 20px;
+    height: 20px;
+    border-left: 1px solid #333;
+    border-top: 1px solid #333;
+    transform: rotate(45deg);
+}
+.top-button:hover {
+    opacity: .7;
+}
+
+/* footer */
+footer {
+    font-size: 9px;
+    margin: 0;
+    padding: 0;
+}
+footer > p {
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* smartphone responsive */
+@media screen and (max-width: 600px) {
+    .hero-bg > img {
+        height: calc(100vh - 60px);
+    }
+
+    .section-about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-about-content > img {
+        margin-bottom: 5px;
+    }
+
+    .bicycle-list {
+        flex-direction: column;
+    }
+    .bicycle-item {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+}
+

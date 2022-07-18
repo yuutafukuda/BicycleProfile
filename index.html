@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+
+    <link href="https://unpkg.com/sanitize.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="wrapper header-wrapper" id="top">
+            <h1>
+                <a href="#" class="logo"><img src="./img/logo.svg" alt="Profile Logo"></a>
+            </h1>
+            <nav class="header-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#aboutSection">About</a></li>
+                    <li class="nav-item"><a href="#bicycleSection">Bicycle</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- first view -->
+        <div class="hero-bg">
+            <img src="./img/mainvisual.jpg" alt="Hero Bicycle Photograph">
+        </div>
+
+        <!-- about -->
+        <section class="section" id="aboutSection">
+            <div class="wrapper">
+                <h2 class="section-headline">About</h2>
+                <div class="section-about-content">
+                    <img src="./img/usericon_edited.png" alt="Account Icon Photo" class="about-img">
+                    <div class="text">
+                        <h3 class="about-title">Rider Name</h3>
+                        <p class="about-content">
+                            テキストテキストテキストテキストテキストテキストテキスト<br>
+                            テキストテキストテキストテキストテキストテキストテキスト<br>
+                            テキストテキストテキストテキストテキストテキストテキスト<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- bicycle -->
+        <section class="section" id="bicycleSection">
+            <div class="wrapper">
+                <h2 class="section-headline">Bicycle</h2>
+                <div class="section-bicycle-content">
+                    <ul class="bicycle-list">
+                        <li class="bicycle-item">
+                            <img src="./img/bicycle1.jpg" alt="First Bicycle Photo" class="bicycle-img">
+                            <h3 class="bicycle-title">タイトルタイトル</h3>
+                            <p class="bicycle-text">
+                                テキストテキストテキスト
+                            </p>
+                        </li>
+                        <li class="bicycle-item">
+                            <img src="./img/bicycle2.jpg" alt="Second Bicycle Photo" class="bicycle-img">
+                            <h3 class="bicycle-title">タイトルタイトル</h3>
+                            <p class="bicycle-text">
+                                テキストテキストテキスト
+                            </p>
+                        </li>
+                        <li class="bicycle-item">
+                            <img src="./img/bicycle3.jpg" alt="Third Bicycle Photo" class="bicycle-img">
+                            <h3 class="bicycle-title">タイトルタイトル</h3>
+                            <p class="bicycle-text">
+                                テキストテキストテキスト
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- top button -->
+    <a href="#top" class="top-button" id="top-arrow">
+        <span></span>TOP
+    </a>
+
+    <footer>
+        <p>© 2020 Profile</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
